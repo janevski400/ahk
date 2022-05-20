@@ -37,6 +37,8 @@ return
 run, C:\Users\stef\ahpexTwinTraka.m4a
 return
 
+
+
 ; MKD
 
 ;ѐ (Кирилично)
@@ -49,7 +51,7 @@ return
 Return
 }
 
-; alt + ` за ` при користење на Македонска поддршка
+; alt + ѝ за ` при користење на Македонска поддршка
 !`::
 Send, ``
 Return
