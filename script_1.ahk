@@ -37,8 +37,6 @@ return
 run, C:\Users\stef\ahpexTwinTraka.m4a
 return
 
-
-
 ; MKD
 
 ;ѐ (Кирилично)
