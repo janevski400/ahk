@@ -16,6 +16,7 @@
 ;ctrl + alt + pageDown
 ^!PgDn::Send   {Volume_Down}
 
+; windows terminal
 ;alt + ctrl + t
 !^t::
 run, C:\Users\stef\Software\wt\wt
@@ -25,8 +26,9 @@ return
 run, explorer.exe
 return
 
+; bitwarden
 !^w::
-run, C:\Program Files\Bitwarden\Bitwarden.exe
+run, C:\Users\stef\AppData\Local\Programs\Bitwarden\Bitwarden.exe
 return
 
 !^n::
@@ -120,3 +122,39 @@ Return
 ^!SC028::
 Send, `„
 Return
+
+; google-search (ctrl+alt+g)
+^!g::
+{
+    Send, ^c
+    Sleep 50
+    Run, https://www.google.com/search?q=%clipboard%
+    Return
+}
+
+; Duck-Duck-Go (ctrl+alt+d)
+^!d:: 
+{
+    Send, ^c
+    Sleep 50
+    Run, https://duckduckgo.com/?q=%clipboard%
+    Return
+}
+
+; makedonski-gov-mk (ctrl+alt+r)
+^!r:: 
+{
+    Send, ^c
+    Sleep 50
+    Run, https://makedonski.gov.mk/corpus/s?q=%clipboard%
+    Return
+}
+
+; dictionary (ctrl+alt+`)
+^!`::
+{
+    Send, ^c
+    Sleep 50
+    Run, https://www.dictionary.com/browse/%clipboard%
+    Return
+}
