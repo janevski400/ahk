@@ -113,6 +113,16 @@ $+SC00C::
 Send, `_
 Return
 
+; ctrl+alt+ѓ => ]
+^!SC01B::
+Send, {]}
+Return
+
+; ctrl+shift+ѓ => ]
+^+SC01A::
+Send, {[}
+Return
+; [][]
 ; ctrl+shift+" => “
 ^+SC028::
 Send, `“
