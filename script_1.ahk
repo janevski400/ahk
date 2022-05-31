@@ -133,6 +133,11 @@ Return
 Send, `„
 Return
 
+; ctrl+alt+ч => ;
+^!;::
+Send, `;
+Return
+
 ; google-search (ctrl+alt+g)
 ^!g::
 {
